@@ -1,0 +1,10 @@
+version: '3'
+services:
+  mr_vod:
+    image: selenium/standalone-chrome:latest
+    ports: 
+      - "4444:4444"
+    environment:
+      http_proxy: http://10.55.254.1:80
+      https_proxy: http://10.55.254.1:80
+      ftp_proxy: http://10.55.254.1:80
